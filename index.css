@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+nav{
+  background-color: #d4d4d4;
+  box-shadow: 3px 3px 5px rgba(0,0 , 0, 0.1);
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+nav a:hover{
+  background-color: #f0f0f0;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.menu-button{
+  display: none;
+}
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
+@media(max-width: 300px){
+  .sidebar{
+    width: 100%;
+  }
+}
+
+
+
+/* log.html{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('dispatch.jpg');
+  background-size: cover;
+  background-position: center;
+} */
+
+
+.hero {
+    position: relative;
+    height: 100vh; /* Set hero height to 100% viewport height */
+    overflow: hidden; /* Clip overflowing content */
+  }
+  
+  .hero-image {
+    width: 100%; /* Make image fill container width */
+    height: 100%; /* Make image fill container height */
+    object-fit: cover; /* Scale image to cover container, maintaining aspect ratio */
+  }
+  
+  .hero-text {
+    position: absolute; /* Position text on top of image */
+    top: 50%; /* Center text vertically */
+    left: 50%; /* Center text horizontally */
+    transform: translate(-50%, -50%); /* Center text using transform for better compatibility */
+    text-align: center; /* Center text content */
+    color: white; /* Set text color to white */
+  }
+  
+  .hero-text h1 {
+    font-size: 3em; /* Adjust heading size as needed */
+    margin-bottom: 1rem; /* Add some space below heading */
+  }
+  
+  .hero-text p {
+    font-size: 1.2em; /* Adjust paragraph size as needed */
+    line-height: 1.5; /* Adjust line spacing for readability */
+    margin-bottom: 1rem; /* Add some space below paragraph */
+  }
+  
+  .hero-text a.btn {
+    background-color: #007bff; /* Adjust button color as needed */
+    color: white; /* Set button text color to white */
+    padding: 10px 20px; /* Adjust button padding as needed */
+    border: none;
+    border-radius: 5px; /* Add rounded corners to button */
+    text-decoration: none; /* Remove underline from button text */
+  }
+  
+  .hero-text a.btn:hover { /* Button hover effect (optional) */
+    background-color: #0069d9; /* Adjust hover color as needed */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* body{
+    min-height: 100vh;
+    background-image: url(laptop);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  } */
